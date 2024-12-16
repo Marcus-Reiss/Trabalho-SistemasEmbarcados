@@ -25,6 +25,8 @@ RUN mkdir /lely-core && touch /lely-core/xablau
 COPY lely-core/ /lely-core
 RUN mkdir /lely-core/build-arm-docker-debian-11
 RUN mkdir /lely-core/install-arm-docker-debian-11
+RUN apt-get update && apt-get install -y autoconf automake libtool crossbuild-essential-arm64
+RUN cd /lely-core && autoreconf -i
 WORKDIR /lely-core/build-arm-docker-debian-11
 RUN ../configure --host=arm-linux-gnueabihf --disable-python --disable-tests --prefix=/lely-core/install-arm-docker-debian-11 \
     && make -j20 \
