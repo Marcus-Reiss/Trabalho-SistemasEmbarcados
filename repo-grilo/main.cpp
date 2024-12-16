@@ -707,9 +707,9 @@ int main(int argc, char* argv[]) {
             }
         }
 
-        /*if (time_us > 3e6) {
+        if (time_us > 2e6) {
             manopla.stop();
-        }*/
+        }
     };
 
     x = {0, 0};
@@ -802,9 +802,9 @@ int main(int argc, char* argv[]) {
             }
         }
 
-        /*if (time_us > 3e6) {
+        if (time_us > 2e6) {
             manopla.stop();
-        }*/
+        }
     };
 
     manopla.prepare(250000,
@@ -834,7 +834,7 @@ int main(int argc, char* argv[]) {
         manopla.installOnSyncCallback(onSyncCallbackDLQREvent);
     }
 
-    /*ss << synccallback;
+    ss << synccallback;
 
     if (synccallback == "dlqr" || synccallback == "dlqr-event"){
         ss << "-" << referenceType;
@@ -853,7 +853,7 @@ int main(int argc, char* argv[]) {
         ss << "a" << std::scientific << event_a << "_"
            << "b" << std::scientific << event_b << "_"
            << "s" << std::scientific << event_sigma;
-    }*/
+    }
     ss << synccallback << "_" << controllerArgParameter << ".csv";
 
     manopla.start_loop();
