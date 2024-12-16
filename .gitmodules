@@ -1,0 +1,3 @@
+[submodule "eesc-aero-embedded-systems"]
+	path = eesc-aero-embedded-systems
+	url = https://github.com/griloHBG/eesc-aero-embedded-systems.git
