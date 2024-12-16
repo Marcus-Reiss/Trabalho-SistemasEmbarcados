@@ -1,0 +1,3 @@
+/projeto/build_arm/CMakeFiles/edit_cache.dir
+/projeto/build_arm/CMakeFiles/rebuild_cache.dir
+/projeto/build_arm/CMakeFiles/eesc-aero-embedded-systems.dir
